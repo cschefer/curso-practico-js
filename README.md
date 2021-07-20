@@ -1,6 +1,6 @@
-# curso-practico-js
+# Curso Práctico de JavaScript
 
-...
+> JS Challenge de Platzi
 
 ## Taller #1: Figuras geométricas
 
