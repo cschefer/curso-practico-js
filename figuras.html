@@ -17,21 +17,73 @@
       Este es el primer taller del curso práctico de JavaScript
     </p>
   </header>
+
   <section>
-    <h2>
-      Calcula el área y perímetro de un Cuadrado.
-    </h2>
     <form action="">
-      <label for="inputCuadrado">
-        Escribe cuánto mide cada lado de tu cuadrado:
-      </label>
-      <input id="inputCuadrado" type="number" />
-      <button type="button" onclick="calcularPerimetroCuadrado()">
-        Calcular el Perímetro
-      </button>
-      <button type="button" onclick="calcularAreaCuadrado()">
-        Calcular el Área
-      </button>
+      <fieldset>
+        <legend>
+          <strong>Cuadrado</strong> - Área y Perímetro
+        </legend>
+
+        <label for="inputCuadrado">Lado:</label> <br>
+        <input id="inputCuadrado" type="number" />
+
+        <br><br>
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Área
+        </button>
+      </fieldset>
+    </form>
+  </section>
+  <br>
+  <section>
+    <form action="">
+      <fieldset>
+        <legend>
+          <strong>Triangulo</strong> - Área y Perímetro
+        </legend>
+
+        <label for="inputTrianguloLado1">Lado #1</label> <br>
+        <input id="inputTrianguloLado1" type="number" /><br>
+
+        <label for="inputTrianguloLado2">Lado #2</label> <br>
+        <input id="inputTrianguloLado2" type="number" />
+        <br>
+
+        <label for="inputTrianguloBase">Base o Lado #3</label> <br>
+        <input id="inputTrianguloBase" type="number" />
+        <br><br>
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Área
+        </button>
+      </fieldset>
+    </form>
+  </section>
+  <br>
+  <section>
+    <form action="">
+      <fieldset>
+        <legend>
+          <strong>Circulo</strong> - Área y Perímetro
+        </legend>
+
+        <label for="inputCirculo">Radio:</label> <br>
+        <input id="inputCirculo" type="number" />
+
+        <br><br>
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+          Área
+        </button>
+      </fieldset>
     </form>
   </section>
 
