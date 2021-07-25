@@ -1,7 +1,7 @@
 # Curso Práctico de JavaScript
 
-> Platzi JS Challenge
-> <https://platzi.com/blog/jschallenge/>
+> Platzi JS Challenge  
+> <https://platzi.com/blog/jschallenge/>  
 > Iniciado el 12/7/2021
 
 ## Taller #1: Figuras geométricas
