@@ -15,6 +15,8 @@
 
 ## Taller #2: Porcentajes y Descuentos.
 
+<https://cschefer.github.io/curso-practico-js/descuento.html>
+
 1.  Definir las fórmulas.
 2.  Implementar las fórmulas en JS.
 3.  Crear funciones.
