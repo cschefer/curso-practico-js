@@ -16,29 +16,35 @@
     <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
   </header>
   <section>
-    <h2>
-      Calcula el precio a pagar de tus productos con descuento.
-    </h2>
+
+    <form>
+      <fieldset>
+        <legend>
+          Precios con Descuentos y Cupones
+        </legend>
+
+        <label for="inputPrice">Escribe el precio de tu producto:</label>
+        <input type="number" name="" id="inputPrice">
+        <br>
+        <label for="inputDiscount">Escribe el Porcentaje que tendrá tu producto:</label>
+        <input type="number" name="" id="inputDiscount">
+        <br><br>
+
+        <label for="couponOptions">Consigue más descuento!</label>
+        <br>
+        <select id="couponOptions">
+          <option>Seleccione...</option>
+        </select>
+        <br> <br>
+
+        <button type="button" onclick="onClickButtonPriceDiscount()">
+          Calcular el precio con descuento
+        </button>
+
+        <p id="ResultP"></p>
+      </fieldset>
+    </form>
   </section>
-  <form>
-    <label for="inputPrice">Escribe el precio de tu producto:</label>
-    <input type="number" name="" id="inputPrice">
-    <br>
-    <label for="inputDiscount">Escribe el Porcentaje que tendrá tu producto:</label>
-    <input type="number" name="" id="inputDiscount">
-    <br>
-
-    <select id="couponOptions">
-      <option>Seleccionar Cupon</option>
-    </select>
-    <br> <br>
-
-    <button type="button" onclick="onClickButtonPriceDiscount()">
-      Calcular el precio con descuento
-    </button>
-
-    <p id="ResultP"></p>
-  </form>
 
   <script src="./descuento.js"></script>
 </body>
