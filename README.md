@@ -21,3 +21,12 @@
 2.  Implementar las fórmulas en JS.
 3.  Crear funciones.
 4.  Integrar JS con HTML.
+
+## Taller #3: Promedio, mediana y moda.
+
+<https://cschefer.github.io/curso-practico-js/promedio.html>
+
+1.  Definir las fórmulas.
+2.  Implementar las fórmulas en JS.
+3.  Crear funciones.
+4.  Integrar JS con HTML.
