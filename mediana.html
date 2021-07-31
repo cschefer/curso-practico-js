@@ -2,46 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curso Práctico de JavaScript | Mediana</title>
 </head>
 
 <body>
   <header>
-    <h1>
-      Mediana
-    </h1>
-    <p>Este es el tercer taller del Curso Práctico de JavaScript</p>
+    <h1>Mediana</h1>
+    <p>
+      Este es el tercer taller del Curso Práctico de
+      JavaScript
+    </p>
   </header>
   <section>
-
     <form>
       <fieldset>
         <legend>
-          Precios con Descuentos y Cupones
+          Calcula la mediana de una lista de valores
         </legend>
 
-        <label for="inputPrice">Escribe el precio de tu producto:</label> <br>
-        <input type="number" name="" id="inputPrice">
-        <br>
-        <label for="inputDiscount">Escribe el Porcentaje que tendrá tu producto:</label> <br>
-        <input type="number" name="" id="inputDiscount">
-        <br><br>
-
-        <label for="couponOptions">Consigue más descuento!</label>
-        <br>
-        <select id="couponOptions">
-          <option>Seleccione...</option>
-        </select>
-        <br> <br>
-
-        <button type="button" onclick="onClickButtonPriceDiscount()">
-          Calcular el precio con descuento
+        <label for="inputValue">Escribe un valor:</label>
+        <br />
+        <input type="number" id="inputValue" />
+        <button type="button" onclick="onClickButtonAddValue(document.getElementById('inputValue').value);">
+          Agregar
         </button>
+        <br />
+        <p>
+          La mediana es:
+          <strong id="medianaCalculada"></strong>
+        </p>
+        <h4>Listado:</h4>
+        <ul id="arrayValues"></ul>
 
-        <p id="ResultP"></p>
+        <button type="button" onclick="onClickButtonVaciarArray()">
+          Borrar Lista
+        </button>
       </fieldset>
     </form>
   </section>
