@@ -17,6 +17,10 @@ function esPar(numerito) {
   }
 }
 
+function compareNumbers(a, b) {
+  return a - b;
+}
+
 var lista = [];
 
 function onClickButtonAddValue(val) {
@@ -24,6 +28,8 @@ function onClickButtonAddValue(val) {
     // agregarlo al array
     val = Number(val);
     lista.push(val);
+    console.log(lista);
+    lista.sort(compareNumbers);
     console.log(lista);
     // recargar listado html
     addtoHtmlList(val);
@@ -47,8 +53,12 @@ const medianaHtml = document.getElementById(
 // }}
 
 function addtoHtmlList(value) {
-  var el = '<li>' + value + '</li>';
-  htmlList.insertAdjacentHTML('beforeend', el);
+  htmlList.innerHTML = '';
+  for (var i = 0; i < lista.length; i++) {
+    var value = lista[i];
+    var el = '<li>' + value + '</li>';
+    htmlList.insertAdjacentHTML('beforeend', el);
+  }
 }
 
 function onClickButtonVaciarArray() {
@@ -63,18 +73,14 @@ let mediana;
 
 function calcularMediana(lista) {
   const mitadLista = parseInt(lista.length / 2);
-  console.log('mitadLista ' + mitadLista);
   if (esPar(lista.length)) {
     const elemento1 = lista[mitadLista - 1];
-    console.log('elem 1: ' + elemento1);
     const elemento2 = lista[mitadLista];
-    console.log('elem 2: ' + elemento2);
 
     const promedioEl1yEl2 = calcularMediaAritmetica([
       elemento1,
       elemento2,
     ]);
-    console.log('promedio: ' + promedioEl1yEl2);
     mediana = promedioEl1yEl2;
   } else {
     mediana = lista[mitadLista];
