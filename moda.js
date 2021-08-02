@@ -1,6 +1,5 @@
-const lista1Count = {};
-
 function calcularModa(lista) {
+  const lista1Count = {};
   lista.map(function (elemento) {
     if (lista1Count[elemento]) {
       lista1Count[elemento] += 1;
@@ -16,15 +15,24 @@ function calcularModa(lista) {
   );
 
   const moda = lista1Array[lista1Array.length - 1];
-  return moda;
+  modaHtml.innerText =
+    moda[0] + ' apareció ' + moda[1] + ' veces.';
+
+  // if ((moda[1] = 1)) {
+  //   modaHtml.innerText =
+  //     moda[0] + ' apareció ' + moda[1] + ' vez.';
+  // } else {
+  //   modaHtml.innerText =
+  //     moda[0] + ' apareció ' + moda[1] + ' veces.';
+  // }
 }
 
+var lista = [];
 function onClickButtonAddValue(val) {
   if (val != false) {
     // agregarlo al array
     val = Number(val);
     lista.push(val);
-    lista.sort(compareNumbers);
     // recargar listado html
     addtoHtmlList();
     // calcular la mediana
@@ -33,15 +41,14 @@ function onClickButtonAddValue(val) {
     // limpia input
     input = document.getElementById('inputValue');
     input.value = '';
+    input.target;
   }
 }
 
 const htmlList = document.getElementById('arrayValues');
-const medianaHtml = document.getElementById(
-  'medianaCalculada'
-);
+const modaHtml = document.getElementById('modaCalculada');
 // function addtoHtmlList() {
-// for (var i = 0; i < lista.length; i++) {
+// for (var i = 0 ; i < lista.length; i++) {
 //   var el = '<li>' + lista[i] + '</li>';
 //   htmlList.insertAdjacentHTML('beforeend', el);
 // }}
@@ -58,7 +65,8 @@ function addtoHtmlList() {
 function onClickButtonVaciarArray() {
   // vacia el array
   lista = [];
+
   // vacia el listado html
   htmlList.innerHTML = '';
-  medianaHtml.innerText = '';
+  modaHtml.innerText = '';
 }
