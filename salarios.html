@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso Práctico de JavaScript | Moda</title>
+</head>
+
+<body>
+  <header>
+    <h1>Salario</h1>
+    <p>
+      Este es el cuarto taller del Curso Práctico de
+      JavaScript
+    </p>
+  </header>
+  <section>
+    <form>
+      <fieldset>
+        <legend>
+          Calcula la media de salarios y la media Top10
+        </legend>
+
+        <label for="inputValue">Escribe un valor:</label>
+        <br />
+        <input type="number" id="inputValue" />
+        <button type="button" onclick="onClickButtonAddValue(document.getElementById('inputValue').value);">
+          Agregar
+        </button>
+        <br />
+        <p>
+          La moda es:
+          <strong id="modaCalculada"></strong>
+        </p>
+        <h4>Listado:</h4>
+        <ul id="arrayValues"></ul>
+
+        <button type="button" onclick="onClickButtonVaciarArray()">
+          Borrar Lista
+        </button>
+      </fieldset>
+    </form>
+  </section>
+
+  <script src="./salarios.js"></script>
+  <script src="./analisis.js"></script>
+</body>
+
+</html>
